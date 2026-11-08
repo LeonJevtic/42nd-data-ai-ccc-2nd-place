@@ -17,6 +17,8 @@ Final standings of the 42nd Data/AI CCC, 23 Oct 2026 ([Hall of Fame](https://cod
 **Team:** Leon Jevtić ([@LeonJevtic](https://github.com/LeonJevtic)), Lenard Grösswang
 ([@lGroesswang](https://github.com/lGroesswang)), Jakob Kölblinger ([@JakobKoelblinger](https://github.com/JakobKoelblinger))
 
+> **Status:** finished. This repository is an archive of our contest entry and is no longer developed.
+
 ---
 
 ## Contents
@@ -42,7 +44,7 @@ Deeper write-ups live in [`docs/`](docs):
 lose when your **Kernel** is destroyed. A shrinking **firewall** burns the outer ring after rounds 8, 16, 24 and 26, so
 every game ends after at most 26 rounds. ([Full summary](docs/the-game.md).)
 
-Level 4 was a live tournament. Every team uploads **one ONNX network** (at most 5 MiB) that maps a position to:
+Levels 1-3 were warm-ups on the same game ([`levels/`](levels)). Level 4 was a live tournament. Every team uploads **one ONNX network** (at most 5 MiB) that maps a position to:
 
 - `policy`: 4096 logits, one per (from-square, to-square) action, and
 - `value`: the expected result for the side to move, in `[-1, 1]`.
@@ -162,6 +164,7 @@ matches. The full story, including three bugs we found along the way: [docs/afte
 az/                 training pipeline (self-play, training, evaluation, export)
 analysis/           scripts we used to analyse games and test ideas
 models/             gen34.onnx (our submission) and gen78.onnx (post-contest), with a model card
+levels/             our small solvers for the warm-up Levels 1 and 2
 results/            training log, benchmark log and manual test results
 docs/               write-ups: the game, how it works, the training run, evaluation, after the contest, code map
 defensive.onnx      small hand-built defensive bot, used as a fixed sparring partner in self-play

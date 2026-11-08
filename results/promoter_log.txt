@@ -1,0 +1,84 @@
+16:46:44 CANDIDATE gen15 vs reference: full 69/100 (cyan 31/50, magenta 38/50), late 41/80
+16:55:51 --- reference switched to gen15 ---
+17:12:35 --- reference switched to gen17 (gen17 vs gen15: 84/100) ---
+17:18:50 CANDIDATE gen19 vs reference: full 70/100 (cyan 36/50, magenta 34/50), late 38/80
+17:19:58 --- reference switched to gen19 (gen19 vs gen17: 70/100) ---
+17:28:06 CANDIDATE gen21 vs reference: full 64/100 (cyan 30/50, magenta 34/50), late 39/80
+17:41:54 CANDIDATE gen23 vs reference: full 64/100 (cyan 27/50, magenta 37/50), late 40/80
+18:02:24 CANDIDATE gen25 vs reference: full 74/100 (cyan 28/50, magenta 46/50), late 40/80
+18:12:13 --- reference switched to gen26 (gen26 vs gen25: 122/200) ---
+18:16:47 CANDIDATE gen28 vs reference: full 63/100 (cyan 32/50, magenta 31/50), late 42/80
+18:19:36 --- reference switched to gen28 (gen28 vs gen26: 185/300) ---
+18:21:26 bench gen29 vs reference: full 54/100 (cyan 31/50, magenta 23/50), late 40/80
+18:26:00 CANDIDATE gen30 vs reference: full 67/100 (cyan 28/50, magenta 39/50), late 40/80
+18:28:30 --- reference switched to gen30 (gen30 vs gen28: 138/200, vs gen29 66/100) ---
+18:30:22 bench gen31 vs reference: full 56/100 (cyan 30/50, magenta 26/50), late 40/80
+18:30:28 --- gen30 live (uploaded) ---
+18:34:21 bench gen32 vs reference: full 56/100 (cyan 32/50, magenta 24/50), late 38/80
+18:39:35 CANDIDATE gen33 vs reference: full 73/100 (cyan 40/50, magenta 33/50), late 39/80
+18:40:59 --- reference switched to gen33 (gen33 vs gen30: 138/200) ---
+18:41:28 --- gen33 live (uploaded) ---
+18:44:15 CANDIDATE gen34 vs reference: full 73/100 (cyan 42/50, magenta 31/50), late 40/80
+18:45:49 --- gen34 live (uploaded); reference switched to gen34 (gen34 vs gen33: 142/200) ---
+18:48:32 bench gen35 vs reference: full 48/100 (cyan 18/50, magenta 30/50), late 41/80
+18:59:54 bench gen36 vs reference: full 50/100 (cyan 23/50, magenta 27/50), late 40/80
+19:04:46 bench gen37 vs reference: full 48/100 (cyan 17/50, magenta 31/50), late 41/80
+19:09:14 CANDIDATE gen38 vs reference: full 66/100 (cyan 21/50, magenta 45/50), late 40/80
+19:14:48 CANDIDATE gen39 vs reference: full 63/100 (cyan 22/50, magenta 41/50), late 39/80
+19:20:21 CANDIDATE gen40 vs reference: full 89/100 (cyan 43/50, magenta 46/50), late 41/80
+19:26:47 CANDIDATE gen41 vs reference: full 79/100 (cyan 39/50, magenta 40/50), late 41/80
+19:31:42 CANDIDATE gen42 vs reference: full 83/100 (cyan 45/50, magenta 38/50), late 40/80
+19:34:24 --- reference switched to gen40 (best: gen40 vs gen34 173/200, vs gen38 157/200; NOT uploaded yet, live is still gen34) ---
+19:35:55 CANDIDATE gen43 vs reference: full 72/100 (cyan 27/50, magenta 45/50), late 40/80
+19:40:18 --- reference switched to gen43 (gen43 vs gen40 134/200, vs gen34 85/100, pool 80.6%; NOT uploaded yet, live is still gen34) ---
+19:40:41 manual bench (watcher skipped) gen44 vs gen43 {'a_wins': 78, 'games': 100, 'a_as_cyan': '42/50', 'a_as_magenta': '36/50', 'avg_len': 47.9}
+19:45:28 --- reference switched to gen44 (gen44 vs gen43 152/200, vs gen34 84/100, pool 82.8%; NOT uploaded yet, live is still gen34) ---
+19:46:42 bench gen45 vs reference: full 43/100 (cyan 36/50, magenta 7/50), late 41/80
+19:50:49 CANDIDATE gen46 vs reference: full 62/100 (cyan 47/50, magenta 15/50), late 40/80
+19:56:14 CANDIDATE gen47 vs reference: full 75/100 (cyan 46/50, magenta 29/50), late 40/80
+19:56:56 --- promote run: best gen44, pool 0.828, next gen > 46 ---
+20:00:43 CANDIDATE gen47 vs gen44: 75/100 (cyan 46/50, magenta 29/50); 77/100 (cyan 46/50, magenta 31/50); pool 0.772 < 0.828 (gen26 56/60, gen30 31/60, gen33 52/60) -> rejected
+20:06:12 --- promote run: best gen44, pool 0.796, next gen > 47 ---
+20:07:09 bench gen48 vs gen44: 61/100 (cyan 47/50, magenta 14/50)
+20:09:58 CANDIDATE gen49 vs gen44: 62/100 (cyan 48/50, magenta 14/50); second seed 58/100 (cyan 48/50, magenta 10/50) -> not confirmed
+20:13:53 bench gen50 vs gen44: 52/100 (cyan 42/50, magenta 10/50)
+20:19:02 bench gen51 vs gen44: 56/100 (cyan 40/50, magenta 16/50)
+20:25:07 CANDIDATE gen52 vs gen44: 65/100 (cyan 45/50, magenta 20/50); second seed 60/100 (cyan 47/50, magenta 13/50) -> not confirmed
+20:31:25 PROMOTED gen50 (manual, new criteria) vs gen44: tournament positions 43:17 of 400, start 52/100, pool8 0.825 vs 0.796; value clipped -> model_level4_gen50.onnx
+20:31:34 --- promote run: best gen50, pool 0.825, next gen > 52 ---
+20:34:44 bench gen53 vs gen50: positions 22:12 of 300
+20:37:41 bench gen54 vs gen50: positions 25:19 of 300
+20:41:25 bench gen55 vs gen50: positions 26:21 of 300
+20:46:23 bench gen56 vs gen50: positions 26:22 of 300
+20:51:18 bench gen57 vs gen50: positions 27:23 of 300
+20:56:03 bench gen58 vs gen50: positions 18:14 of 300
+21:00:28 bench gen59 vs gen50: positions 28:18 of 300
+21:04:51 bench gen60 vs gen50: positions 27:18 of 300
+21:13:22 CANDIDATE gen61 vs gen50: start 73/100 (cyan 42/50, magenta 31/50); positions 30:16 of 300; pool 0.750 < 0.825 (gen20 27/30, gen25 26/30, gen28 11/30, gen30 25/30, gen33 20/30, gen36 22/30, gen38 25/30, gen41 24/30) -> rejected
+21:16:32 bench gen62 vs gen50: positions 34:31 of 300
+21:20:19 bench gen63 vs gen50: positions 39:27 of 300
+21:25:14 bench gen64 vs gen50: positions 33:19 of 300
+21:32:55 CANDIDATE gen65 vs gen50: start 70/100 (cyan 29/50, magenta 41/50); positions 42:16 of 300; pool 0.733 < 0.825 (gen20 25/30, gen25 27/30, gen28 22/30, gen30 16/30, gen33 24/30, gen36 18/30, gen38 24/30, gen41 20/30) -> rejected
+21:39:19 CANDIDATE gen66 vs gen50: start 83/100 (cyan 45/50, magenta 38/50); positions 41:16 of 300; pool 0.683 < 0.825 (gen20 16/30, gen25 16/30, gen28 24/30, gen30 22/30, gen33 23/30, gen36 21/30, gen38 24/30, gen41 18/30) -> rejected
+21:42:26 bench gen67 vs gen50: positions 39:28 of 300
+21:45:22 bench gen68 vs gen50: positions 34:29 of 300
+21:51:43 PROMOTED gen69 vs gen50: start 77/100 (cyan 41/50, magenta 36/50); positions 38:20 of 300; pool 0.800 (gen20 27/30, gen25 26/30, gen28 26/30, gen30 22/30, gen33 24/30, gen36 24/30, gen38 22/30, gen41 21/30) -> model_level4_gen69.onnx
+21:54:43 bench gen70 vs gen69: positions 35:23 of 300
+22:01:09 PROMOTED gen71 vs gen69: start 70/100 (cyan 47/50, magenta 23/50); positions 38:21 of 300; pool 0.842 (gen20 29/30, gen25 24/30, gen28 25/30, gen30 21/30, gen33 26/30, gen36 27/30, gen38 27/30, gen41 23/30) -> model_level4_gen71.onnx
+22:07:34 CANDIDATE gen72 vs gen71: start 88/100 (cyan 49/50, magenta 39/50); positions 31:16 of 300; pool 0.767 < 0.842 (gen20 27/30, gen25 25/30, gen28 10/30, gen30 24/30, gen33 26/30, gen36 25/30, gen38 25/30, gen41 22/30) -> rejected
+22:10:54 bench gen73 vs gen71: positions 28:18 of 300
+22:17:28 CANDIDATE gen74 vs gen71: start 71/100 (cyan 40/50, magenta 31/50); positions 44:20 of 300; pool 0.750 < 0.842 (gen20 25/30, gen25 24/30, gen28 13/30, gen30 26/30, gen33 24/30, gen36 20/30, gen38 24/30, gen41 24/30) -> rejected
+22:24:03 CANDIDATE gen75 vs gen71: start 66/100 (cyan 44/50, magenta 22/50); positions 34:18 of 300; pool 0.771 < 0.842 (gen20 26/30, gen25 24/30, gen28 11/30, gen30 26/30, gen33 25/30, gen36 26/30, gen38 24/30, gen41 23/30) -> rejected
+22:30:49 CANDIDATE gen77 vs gen71: start 65/100 (cyan 47/50, magenta 18/50); positions 34:17 of 300; pool 0.746 < 0.842 (gen20 23/30, gen25 26/30, gen28 12/30, gen30 24/30, gen33 22/30, gen36 24/30, gen38 24/30, gen41 24/30) -> rejected
+22:33:06 --- promote run: best gen71, pool 0.842, next gen > 77 ---
+22:39:18 CANDIDATE gen78 vs gen71: start 88/100 (cyan 49/50, magenta 39/50); positions 33:15 of 300; pool 0.775 < 0.842 (gen20 23/30, gen25 25/30, gen28 24/30, gen30 25/30, gen33 22/30, gen36 21/30, gen38 24/30, gen41 22/30) -> rejected
+22:40:07 PROMOTED gen78 (manual; pool margin now 2 SE = 0.07) vs gen71: start 88/100 (cyan 49/50, magenta 39/50); held-out positions 33:15 of 300; pool 0.775 vs 0.842 -> model_level4_gen78.onnx
+22:40:10 --- promote run: best gen78, pool 0.775, next gen > 79 ---
+22:43:31 bench gen80 vs gen78: positions 13:26 of 300
+22:48:12 bench gen81 vs gen78: positions 18:20 of 300
+22:52:54 bench gen82 vs gen78: positions 10:23 of 300
+22:59:44 bench gen83 vs gen78: positions 23:15 of 300
+23:04:11 bench gen84 vs gen78: positions 30:23 of 300
+23:08:55 bench gen85 vs gen78: positions 24:25 of 300
+23:13:35 bench gen86 vs gen78: positions 15:39 of 300
+23:18:52 bench gen87 vs gen78: positions 10:55 of 300

@@ -1,0 +1,33 @@
+Manual / ad-hoc evaluation results of 23 Oct 2026 (third session) that are NOT in bench.txt.
+All referee settings (100 sims/action, first 8 actions sampled). "start" = arena.match from the initial position (seed in brackets);
+"positions a:b" = arena.tourney_match / analysis/tourney_detail.py (a/b = positions each model won with both colours).
+
+Start-position matches
+  gen38 vs gen34   66 (watcher, seed 3838), 61 (seed 987654), 61 (seed 135791)  -> 188/300
+  gen38 vs gen33   83/100 (cyan 44/50, magenta 39/50) (seed 424242)
+  gen39 vs gen38   88/100 (cyan 47/50, magenta 41/50);  gen39 vs gen34 63 (watcher), 57 (seed 987654)
+  gen40 vs gen34   89 (watcher), 84 (seed 987654);  gen40 vs gen39 50 (cyan 6/50!);  gen40 vs gen38 78 + 79 (seeds 246810, 112233)
+  gen41 vs gen40   45 + 48;  gen42 vs gen40 56 + 56;  gen43 vs gen40 72 (watcher) + 62 (seed 112233);  gen43 vs gen34 85
+  gen44 vs gen43   78 (seed 4444) + 74 (seed 112233);  gen44 vs gen34 84
+  gen46 vs gen44   62 (watcher) + 49 (seed 112233, magenta 7/50)
+  LR A/B (analysis/ab_train.py from runs/ab/ckpt_it45.pt, iteration 46 re-trained):
+    gen47_lr5e5 vs gen47_lr1e4 (control, other seed) 44;  vs trainer's gen47 45;  vs gen44 71;  gen47 vs gen44 73;  gen47_lr1e4 vs gen44 53
+  Ensemble runs/ab/ens_47_47c.onnx (gen47 + gen47_lr1e4): vs gen47 47 + 44, vs gen44 51
+  BN-recalibrated gen78 (runs/ab/gen78_bn.onnx) vs gen78: start 54/100, positions 20:19 of 300
+
+Pool3 (analysis/gauntlet.py, 60 games each vs gen33/gen30/gen26, seeds 7000/8000/9000)
+  gen34 0.672  gen38 0.828  gen39 0.772  gen40 0.778  gen41 0.789  gen42 0.772  gen43 0.806  gen44 0.828  gen46 0.833
+  (promoter, same pool: gen47 0.772 -> rejected vs gen44 0.828)
+
+Pool8 (az.promote.pool_score, 30 games each vs gen20/25/28/30/33/36/38/41)
+  gen44 0.796  gen47 0.746 (gen25 14/30, gen30 15/30)  gen50 0.825  ens_47_47c 0.733
+
+Tournament positions
+  rounds 3-8, 150 positions, full tourney_positions.npz (before the split):  gen44 vs gen34 153/300 games;  gen47 vs gen44 152/300 games
+  rounds 3-5, 100 positions:  gen44 vs gen20 22:6 (72 decided by position);  gen44 vs gen34 8:7 (85 decided)
+  rounds 3-6, 400 positions:  gen44 vs gen34 44:26 (330 decided);  gen50 vs gen44 43:17 (340 decided)
+  held-out tourney_eval.npz, rounds 3-6, 300 positions:  gen77 vs gen78 12:16;  gen79 vs gen78 9:16
+
+Probes (analysis/probe29.py: prior on KE A2->A3 + A2->B3 at match 24862 action 29)
+  gen34 0.027  gen44 0.038  gen46 0.053  gen47 0.044  gen50 0.054  gen60 0.071  gen71 0.068  gen78 0.076  gen85 0.068  gen86 0.043 (damaged)
+  analysis/probe_rset.py (mean prior mass on the 112 rescue-set targets): gen78 0.416  gen85 0.420  gen86 0.397 (damaged)

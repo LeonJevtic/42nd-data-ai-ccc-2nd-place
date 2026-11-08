@@ -1,0 +1,18 @@
+17:57:11 g23_t14 vs gen23: {'a_wins': 39, 'games': 100, 'a_as_cyan': '13/50', 'a_as_magenta': '26/50', 'avg_len': 48.8}
+17:58:23 swa20_23 vs gen23: {'a_wins': 32, 'games': 100, 'a_as_cyan': '16/50', 'a_as_magenta': '16/50', 'avg_len': 50.2}
+17:59:37 g23_t075 vs gen23: {'a_wins': 52, 'games': 100, 'a_as_cyan': '19/50', 'a_as_magenta': '33/50', 'avg_len': 52.0}
+18:02:49 gen21_vscale1.5 vs gen21 seed 515151: {'a_wins': 63, 'games': 100, 'a_as_cyan': '26/50', 'a_as_magenta': '37/50', 'avg_len': 44.2}
+18:03:54 gen21_vscale1.5 vs gen21 seed 616161: {'a_wins': 58, 'games': 100, 'a_as_cyan': '28/50', 'a_as_magenta': '30/50', 'avg_len': 43.9}
+18:04:34 gen25 vs gen21.onnx seed 777002: {'a_wins': 76, 'games': 100, 'a_as_cyan': '32/50', 'a_as_magenta': '44/50', 'avg_len': 45.1}
+18:05:39 g25_v15 vs gen25.onnx seed 818181: {'a_wins': 42, 'games': 100, 'a_as_cyan': '20/50', 'a_as_magenta': '22/50', 'avg_len': 41.9}
+18:08:51 gen26 vs gen25 seed 262626: {'a_wins': 60, 'games': 100, 'a_as_cyan': '27/50', 'a_as_magenta': '33/50', 'avg_len': 42.4}
+18:09:58 gen26 vs gen25 seed 363636: {'a_wins': 62, 'games': 100, 'a_as_cyan': '31/50', 'a_as_magenta': '31/50', 'avg_len': 46.1}
+18:18:08 gen28 vs gen26 seed 282828: {'a_wins': 55, 'games': 100, 'a_as_cyan': '28/50', 'a_as_magenta': '27/50', 'avg_len': 49.0}
+18:19:15 gen28 vs gen26 seed 292929: {'a_wins': 67, 'games': 100, 'a_as_cyan': '31/50', 'a_as_magenta': '36/50', 'avg_len': 45.5}
+18:24:14 gen29 vs gen28 seed 303030: {'a_wins': 52, 'games': 100, 'a_as_cyan': '23/50', 'a_as_magenta': '29/50', 'avg_len': 45.8}
+18:27:25 gen30 vs gen28.onnx seed 313131: {'a_wins': 71, 'games': 100, 'a_as_cyan': '39/50', 'a_as_magenta': '32/50', 'avg_len': 43.8}
+18:28:07 gen30 vs gen29.onnx seed 323232: {'a_wins': 66, 'games': 100, 'a_as_cyan': '33/50', 'a_as_magenta': '33/50', 'avg_len': 44.3}
+18:34:04 swa28_30 vs gen30 seed 404040: {'a_wins': 46, 'games': 100, 'a_as_cyan': '24/50', 'a_as_magenta': '22/50', 'avg_len': 48.9}
+18:34:52 swa29_31 vs gen30 seed 414141: {'a_wins': 50, 'games': 100, 'a_as_cyan': '21/50', 'a_as_magenta': '29/50', 'avg_len': 43.4}
+18:40:41 gen33 vs gen30 seed 333333: {'a_wins': 65, 'games': 100, 'a_as_cyan': '34/50', 'a_as_magenta': '31/50', 'avg_len': 47.4}
+18:44:28 gen34 vs gen33 seed 343434: {'a_wins': 69, 'games': 100, 'a_as_cyan': '41/50', 'a_as_magenta': '28/50', 'avg_len': 44.5}

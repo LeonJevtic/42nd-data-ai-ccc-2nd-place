@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Organizer's starter kit (not redistributed here; see README "Setup")
+colony_one/
+tools/
+play/
+docs/observation.md
+docs/rules.md
+docs/submission.md
+
+# Training outputs (tens of GB: self-play data, checkpoints, every generation)
+runs/
+*.pt
+*.npz
+
+# Raw tournament game files downloaded from the contest dashboard
+matches/
+analysis/out/
+
+# Local submission copy and scratch models (the published models live in models/)
+submit/
+*.onnx
+!models/*.onnx
+!defensive.onnx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

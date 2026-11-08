@@ -1,0 +1,8 @@
+# Versions we trained with (Python 3.13, Windows 10, CUDA 12.4).
+# The game engine itself ("colony_one") comes from the organizer's Level 4
+# starter kit and is installed separately: see README, "Setup".
+torch==2.6.0
+numpy>=2.0
+onnx>=1.22.0
+onnxruntime>=1.24.3
+psutil>=7.0.0

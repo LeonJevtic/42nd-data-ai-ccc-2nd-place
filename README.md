@@ -15,7 +15,7 @@ teams** in the live Level 4 tournament.
 Final standings of the 42nd Data/AI CCC, 23 Oct 2026 ([Hall of Fame](https://codingcontest.org/hall-of-fame), AI / Data tab).
 
 **Team:** Leon Jevtić ([@LeonJevtic](https://github.com/LeonJevtic)), Lenard Grösswang
-([@lGroesswang](https://github.com/lGroesswang)), Jakob Koelblinger ([@JakobKoelblinger](https://github.com/JakobKoelblinger))
+([@lGroesswang](https://github.com/lGroesswang)), Jakob Kölblinger ([@JakobKoelblinger](https://github.com/JakobKoelblinger))
 
 ---
 
